@@ -3,25 +3,25 @@ git, docker
 как установить смотрите сами
 
 проверяете работоспособность этих модулей
-git --version
-docker --version
-docker compose version
+`git --version`
+`docker --version`
+`docker compose version`
 
 
 работа с проектом у каждого будет проходить локально но из одного гит репа
 для получения проекта
-git clone
-cp .env.example .env 
+`git clone`
+`cp .env.example .env` 
 
 далее просто pull новые данные или авто фетч делаете
 
 
 запуск сервера
-docker compose up --build
+`docker compose up --build`
 
 
 если ловите ошибку чтобы посмотреть логи
-docker logs project_backend 
+`docker logs project_backend` 
 
 
 
@@ -31,7 +31,7 @@ docker logs project_backend
 заходите в свой тестовый файл и прописываете в нём то, что хотите сделать create table / insert 
 
 прописываете для инициализации скрипта обновления бд
-make db-init
+`make db-init`
 
 после этого вся схема и все предыдущие данные сбрасываются
 и создаётся новая бд по тем файлам что вы отредактировали
